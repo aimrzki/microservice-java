@@ -4,7 +4,7 @@ import project.facade.books.dto.BookMapper;
 import project.facade.books.dto.BookRequest;
 import project.facade.books.dto.BookResponse;
 import project.domain.entity.BookEntity;
-import project.facade.books.repository.BookRepository;
+import project.domain.repository.BookRepository;
 import project.common.responseV1.ResponseApiV1;
 import project.common.responseV1.ResponseStatus;
 import lombok.extern.slf4j.Slf4j;
