@@ -1,4 +1,4 @@
-package com.java.micro.service.users.entity;
+package project.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

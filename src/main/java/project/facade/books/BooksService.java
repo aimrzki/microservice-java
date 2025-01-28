@@ -1,12 +1,12 @@
-package com.java.micro.service.books;
+package project.facade.books;
 
-import com.java.micro.service.books.dto.BookMapper;
-import com.java.micro.service.books.dto.BookRequest;
-import com.java.micro.service.books.dto.BookResponse;
-import com.java.micro.service.books.entity.BookEntity;
-import com.java.micro.service.books.repository.BookRepository;
-import com.java.micro.service.responseV1.ResponseApiV1;
-import com.java.micro.service.responseV1.ResponseStatus;
+import project.facade.books.dto.BookMapper;
+import project.facade.books.dto.BookRequest;
+import project.facade.books.dto.BookResponse;
+import project.domain.entity.BookEntity;
+import project.facade.books.repository.BookRepository;
+import project.common.responseV1.ResponseApiV1;
+import project.common.responseV1.ResponseStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ public class BooksService {
 
     public ResponseApiV1<?> createBook(BookRequest request) {
         try {
-            BookEntity entity = BookMapper.toRequest(request);
+            BookEntity entity = BookMapper.toEntity(request);
             log.info("Book entity: {}", entity);
             BookEntity savedEntity = repository.save(entity);
             BookResponse response = BookMapper.toResponse(savedEntity);

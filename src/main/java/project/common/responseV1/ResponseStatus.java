@@ -1,4 +1,4 @@
-package com.java.micro.service.responseV1;
+package project.common.responseV1;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

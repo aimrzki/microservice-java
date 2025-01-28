@@ -1,11 +1,15 @@
-package com.java.micro.service.books.dto;
+package project.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @AllArgsConstructor
-public class BookResponse {
+@Document(collection = "book")
+public class BookEntity {
+    @Id
     private String id;
     private String title;
     private String author;
@@ -14,3 +18,4 @@ public class BookResponse {
     private String category;
     private String description;
 }
+
