@@ -1,12 +1,12 @@
-package com.java.micro.service.books.dto;
+package project.facade.books.dto;
 
 
-import com.java.micro.service.books.entity.BookEntity;
+import project.domain.entity.BookEntity;
 
 import java.util.UUID;
 
 public class BookMapper {
-    public static BookEntity toRequest(BookRequest request) {
+    public static BookEntity toEntity(BookRequest request) {
         return new BookEntity(
                 UUID.randomUUID().toString(),
                 request.getTitle(),

@@ -1,15 +1,11 @@
-package com.java.micro.service.books.entity;
+package project.facade.books.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @AllArgsConstructor
-@Document(collection = "book")
-public class BookEntity {
-    @Id
+public class BookResponse {
     private String id;
     private String title;
     private String author;
@@ -18,4 +14,3 @@ public class BookEntity {
     private String category;
     private String description;
 }
-

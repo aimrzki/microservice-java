@@ -1,6 +1,6 @@
-package com.java.micro.service.books.repository;
+package project.facade.books.repository;
 
-import com.java.micro.service.books.entity.BookEntity;
+import project.domain.entity.BookEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface BookRepository extends MongoRepository<BookEntity, String> {

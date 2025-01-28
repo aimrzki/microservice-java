@@ -1,7 +1,6 @@
-package com.java.micro.service.responseV1;
+package project.common.responseV1;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 

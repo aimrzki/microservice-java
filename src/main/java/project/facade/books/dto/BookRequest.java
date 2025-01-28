@@ -1,4 +1,4 @@
-package com.java.micro.service.books.dto;
+package project.facade.books.dto;
 
 import lombok.Data;
 
